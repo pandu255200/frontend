@@ -1,0 +1,120 @@
+/* admin.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7fa;
+  }
+  
+  .admin-login-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 35px 30px;
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .admin-login-container h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .admin-login-container input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+  }
+  
+  .admin-login-container input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 4px rgba(76, 175, 80, 0.4);
+  }
+  
+  .password-wrapper {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .password-wrapper input {
+    padding-right: 45px;
+  }
+  
+  .toggle-password-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: #4CAF50;
+    cursor: pointer;
+    padding: 4px 6px;
+  }
+  
+  .toggle-password-btn:hover {
+    color: #388e3c;
+  }
+  
+  .admin-login-container button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+  }
+  
+  .admin-login-container button:hover {
+    background-color: #388e3c;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 12px;
+  }
+  
+  .forgot-password {
+    margin-top: 15px;
+  }
+  
+  .forgot-password a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .forgot-password a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 480px) {
+    .admin-login-container {
+      margin: 40px 20px;
+      padding: 25px 20px;
+    }
+  
+    .admin-login-container h2 {
+      font-size: 24px;
+    }
+  }
+  
