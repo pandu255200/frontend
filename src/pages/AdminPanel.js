@@ -15,7 +15,7 @@ const AdminPanel = () => {
 
     const fetchCoupons = async () => {
         try {
-            const res = await axios.get('https://gopi-nath.vercel.app/coupons', { headers });
+            const res = await axios.get('https://gopi-nath-a4tk.vercel.app/', { headers });
             setCoupons(res.data);
         } catch (err) {
             console.error('Error fetching coupons:', err.response?.data || err.message);
@@ -28,7 +28,7 @@ const AdminPanel = () => {
 
     const addCoupon = async () => {
         try {
-            await axios.post('https://gopi-nath.vercel.app/api/admin/add', { code: newCode }, { headers });
+            await axios.post('https://gopi-nath-a4tk.vercel.app/', { code: newCode }, { headers });
 
             setNewCode('');
             fetchCoupons();
@@ -39,7 +39,7 @@ const AdminPanel = () => {
 
     const toggleCoupon = async (id) => {
         try {
-            await axios.put(`https://gopi-nath.vercel.app/admin/toggle/${id}`, {}, { headers });
+            await axios.put(`https://gopi-nath-a4tk.vercel.app/${id}`, {}, { headers });
             fetchCoupons();
         } catch (err) {
             console.error('Error toggling coupon:', JSON.stringify(err.response?.data || err.message));
