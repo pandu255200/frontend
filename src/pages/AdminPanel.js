@@ -28,7 +28,8 @@ const AdminPanel = () => {
 
     const addCoupon = async () => {
         try {
-            await axios.post('http://localhost:5000/api/admin/add', { code: newCode }, { headers });
+            await axios.post('https://gopi-nath.vercel.app/api/admin/add', { code: newCode }, { headers });
+
             setNewCode('');
             fetchCoupons();
         } catch (err) {
