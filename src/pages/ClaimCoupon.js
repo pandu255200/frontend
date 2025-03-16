@@ -14,7 +14,7 @@ const ClaimCoupon = () => {
       setLoading(true);
       setMessage('');
       setCoupon(null);
-      const res = await axios.post('http://localhost:5000/api/claim', {}, { withCredentials: true });
+      const res = await axios.post('https://gopi-nath.vercel.app/claim', {}, { withCredentials: true });
 
       // ✅ Make sure coupon object is received and set
       setCoupon(res.data.coupon);
