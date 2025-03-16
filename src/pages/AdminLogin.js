@@ -11,7 +11,7 @@ const AdminLogin = () => {
 
     const handleLogin = async () => {
         try {
-            const res = await axios.post('http://localhost:5000/api/admin/login', { username, password });
+            const res = await axios.post('https://gopi-nath.vercel.app/login', { username, password });
             localStorage.setItem('adminToken', res.data.token);
             navigate('/admin/panel');
         } catch (err) {
